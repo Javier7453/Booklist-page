@@ -3,10 +3,12 @@ let btn_add = document.getElementById("btn_add");
 let txt_add = document.getElementById("txt_add");
 let book_list = document.getElementById("book_list");
 
-let new_bookList = [];
+let new_bookList = JSON.parse(localStorage.getItem("list")) || [];
 
 // Events
 btn_add.addEventListener('click', function(){Add_book(txt_add);});
+
+Print_bookList();
 
 // Functions
 function Add_book(new_book){
@@ -14,6 +16,7 @@ function Add_book(new_book){
         new_bookList.push(new_book.value);
         Print_bookList();
         new_book.value = "";
+        localStorage.setItem("list",JSON.stringify(new_bookList));
     }
 }
 
