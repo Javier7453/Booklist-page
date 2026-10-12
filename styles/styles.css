@@ -1,0 +1,22 @@
+.btn{
+    color: white;
+    border-color: black;
+    background-color: burlywood;
+    margin: 10px;
+}
+
+.card{
+    margin: 10px;
+}
+
+h2{
+    margin: 10px;
+}
+
+#txt_add{
+    margin: 10px;
+}
+
+li{
+    margin: 10px;
+}

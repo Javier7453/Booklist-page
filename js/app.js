@@ -26,12 +26,14 @@ function Print_bookList(){
         let new_book = document.createElement("li");
         let btn_delete = document.createElement("button");
         new_book.innerText = new_bookList[i];
+        new_book.classList.add("d-flex", "align-items-center");
         btn_delete.innerText = "Delete";
+        btn_delete.classList.add("btn");
 
         btn_delete.addEventListener("click", function(){Delete_book(new_bookList[i]);});
 
         book_list.appendChild(new_book);
-        book_list.appendChild(btn_delete);
+        new_book.appendChild(btn_delete);
     }
 }
 
