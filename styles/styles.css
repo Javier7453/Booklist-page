@@ -13,10 +13,19 @@ h2{
     margin: 10px;
 }
 
+h1{
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
 #txt_add{
     margin: 10px;
 }
 
 li{
     margin: 10px;
+}
+
+div{
+    max-width: 500px;
 }
